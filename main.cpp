@@ -8,6 +8,10 @@ int main(){
     cout << &n << endl;
     cout << ptr << endl;
     cout << *ptr << endl;
+
+    *ptr = 10;
+    cout << *ptr << endl;
+    cout << n << endl;
     return 0;
 }
 
