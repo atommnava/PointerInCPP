@@ -11,6 +11,12 @@ int main(void){
     for (int i = 0; i < rows; i++) {
         table[i] = new int[cols];
     }
+    table[1][2] = 88;
 
+    for (int i = 0; i < rows; i++) {
+        delete[]table[i];
+    }
+    delete[] table;
+    table = NULL;
     return 0;
 }
